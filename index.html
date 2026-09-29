@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>Para Maeta 🐀</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Montserrat:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- Fondo -->
+  <div class="noise"></div>
+  <div class="vertical-line line-left"></div>
+  <div class="vertical-line line-right"></div>
+
+
+  <!-- =========================================
+       1. BIENVENIDA
+  ========================================== -->
+
+  <section
+    class="screen active"
+    id="screenWelcome"
+    aria-hidden="false"
+  >
+
+    <div class="content">
+
+      <div class="rat-icon">🐀</div>
+
+      <p class="eyebrow">
+        Mensaje altamente confidencial
+      </p>
+
+      <h1 class="main-title">
+        MAETA…
+      </h1>
+
+      <p>
+        Si estás leyendo esto significa que
+        efectivamente sabes usar un QR.
+      </p>
+
+      <p>
+        Estamos muy orgullosos de ti. 🥹
+      </p>
+
+
+      <div class="signature">
+
+        <span class="signature-label">
+          Atentamente:
+        </span>
+
+        <strong>
+          Geovas + Zero
+        </strong>
+
+        <p class="small-text">
+          Tus amistades favoritas,<br>
+          aunque te hagas pendeja.
+        </p>
+
+      </div>
+
+
+      <button
+        class="btn btn-light"
+        id="startBtn"
+        type="button"
+      >
+        ¿Y ahora qué chingados quieren?
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================
+       2. CONTROL DE SEGURIDAD
+  ========================================== -->
+
+  <section
+    class="screen"
+    id="screenSecurity"
+    aria-hidden="true"
+  >
+
+    <div class="content">
+
+      <div class="warning">
+        ⚠ CONTROL DE SEGURIDAD
+      </div>
+
+      <h2>
+        ALTO AHÍ,
+        <span class="red-text">
+          MAMÁ RATA
+        </span>
+      </h2>
+
+      <p>
+        Antes de continuar necesitamos comprobar
+        que realmente eres Mariana.
+      </p>
+
+      <p class="muted">
+        Pregunta de seguridad:
+      </p>
+
+      <p class="question">
+        ¿Quiénes son tus amigos más increíbles,
+        guapos, generosos y humildes?
+      </p>
+
+
+      <div class="options">
+
+        <button
+          class="btn btn-red"
+          id="correctBtn"
+          type="button"
+        >
+          Geovas y Zero
+        </button>
+
+        <button
+          class="btn btn-outline"
+          id="wrongBtn"
+          type="button"
+        >
+          Otros
+        </button>
+
+      </div>
+
+
+      <div
+        class="response"
+        id="securityResponse"
+        aria-live="polite"
+      ></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================
+       3. REGALO
+  ========================================== -->
+
+  <section
+    class="screen"
+    id="screenGift"
+    aria-hidden="true"
+  >
+
+    <div class="content">
+
+      <p class="eyebrow">
+        Tenemos algo para ti
+      </p>
+
+      <h2>
+        PERO ANTES…
+      </h2>
+
+      <p>
+        Queremos aclarar que esto
+        <strong>NO significa que te queramos.</strong>
+      </p>
+
+      <p class="muted">
+        Simplemente encontramos una forma
+        socialmente aceptable de gastar dinero en ti.
+      </p>
+
+      <div class="heart">
+        🖤
+      </div>
+
+
+      <button
+        class="btn btn-red"
+        id="revealBtn"
+        type="button"
+      >
+        A ver, suelten el regalo
+      </button>
+
+
+      <div class="reject-area">
+
+        <button
+          class="reject-btn"
+          id="rejectBtn"
+          type="button"
+        >
+          No quiero nada de ustedes
+        </button>
+
+      </div>
+
+
+      <div
+        class="escape-message"
+        id="escapeMessage"
+        aria-live="polite"
+      ></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================
+       4. COUNTDOWN
+  ========================================== -->
+
+  <section
+    class="screen"
+    id="screenCountdown"
+    aria-hidden="true"
+  >
+
+    <div class="content">
+
+      <p class="eyebrow">
+        Preparando regalo…
+      </p>
+
+      <div
+        class="countdown-number"
+        id="countdown"
+      >
+        3
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================
+       5. REVEAL CINEMÁTICO
+  ========================================== -->
+
+  <section
+    class="screen reveal-screen"
+    id="screenReveal"
+    aria-hidden="true"
+  >
+
+    <div class="content reveal-content">
+
+
+      <!-- PASO 1 -->
+
+      <div
+        class="reveal-element reveal-present"
+        id="revealPresent"
+      >
+        GEOVAS + ZERO PRESENTAN
+      </div>
+
+
+      <!-- PASO 2 -->
+
+      <h2
+        class="reveal-element reveal-mariana"
+        id="revealMariana"
+      >
+        MARIANA
+      </h2>
+
+
+      <!-- PASO 3 -->
+
+      <p
+        class="reveal-element reveal-outfit"
+        id="revealOutfit"
+      >
+        PREPARA TU OUTFIT<br>
+        DE SEÑORA POST-PUNK
+      </p>
+
+
+      <!-- PASO 4 -->
+
+      <div
+        class="reveal-element reveal-main"
+        id="revealMain"
+      >
+
+        <div class="reveal-separator"></div>
+
+        <p class="we-go">
+          NOS VAMOS A VER A
+        </p>
+
+
+        <div class="motorama-wrapper">
+
+          <h1
+            class="motorama"
+            data-text="MOTORAMA"
+          >
+            MOTORAMA
+          </h1>
+
+        </div>
+
+
+        <p class="seriously">
+          Sí, pendeja.
+          <strong>Es en serio.</strong>
+        </p>
+
+
+        <p class="muted">
+          Una noche escuchando música de gente
+          que claramente necesita vitamina D.
+        </p>
+
+
+        <!-- TICKET -->
+
+        <div class="ticket">
+
+          <div class="ticket-row">
+
+            <span class="ticket-label">
+              Invitada
+            </span>
+
+            <strong>
+              Mariana AKA Mamá Rata 🐀
+            </strong>
+
+          </div>
+
+
+          <div class="ticket-row">
+
+            <span class="ticket-label">
+              Evento
+            </span>
+
+            <strong>
+              MOTORAMA
+            </strong>
+
+          </div>
+
+
+          <div class="ticket-row">
+
+            <span class="ticket-label">
+              Responsables de esta pendejada
+            </span>
+
+            <strong>
+              Geovas + Zero
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <!-- CAMBIAR # POR URL REAL -->
+
+        <a
+          href="boleto.html"
+          class="btn btn-red final-btn"
+          id="ticketBtn"
+        >
+          🎟 VER MI PUTO REGALO
+        </a>
+
+
+        <p class="footer-text">
+          NO SE ADMITEN DEVOLUCIONES DE AMISTAD.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================
+         PLAYER
+    ====================================== -->
+
+    <div
+      class="music-player"
+      id="musicPlayer"
+    >
+
+      <div class="music-info">
+
+        <div class="music-bars">
+
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+
+        <div>
+
+          <span class="song-name">
+            WIND IN HER HAIR
+          </span>
+
+          <span class="artist-name">
+            MOTORAMA
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="sound-btn"
+        id="soundBtn"
+        type="button"
+        aria-label="Silenciar música"
+      >
+        🔊
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================
+       AUDIO
+
+       Guarda el archivo en:
+
+       assets/audio/wind-in-her-hair.mp3
+  ========================================== -->
+
+  <audio
+    id="motoramaAudio"
+    preload="auto"
+  >
+
+    <source
+      src="./assets/audio/wind-in-her-hair.mp3"
+      type="audio/mpeg"
+    >
+
+  </audio>
+
+
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
